@@ -19,9 +19,10 @@
             this.right = right;
         }
 
-        public T Value()
+        public T Data
         {
-            return data;
+            get { return data; }
+            private set { data = value; }
         }
 
         private BinaryTreeNode<T> left;
